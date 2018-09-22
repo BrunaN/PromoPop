@@ -52,16 +52,18 @@ footer .col.icons{
 }
 
 .googlePlay{
-    color: white;
-    cursor: pointer;
     display: inline-block;
-    background-color: black;
-    border-radius: 8px;
-    padding: 8px 10px;
+    border-radius: 10px;
     margin: 10px;
+    height: 60px;
 }
 
-.googlePlay div{
+.googlePlay a img{
+    height: 60px;
+}
+
+
+/* .googlePlay div{
     float: left;
     height: 48px;
     line-height: 48px;
@@ -82,12 +84,11 @@ footer .col.icons{
 
 .googlePlay .text p span{
     font-size: 22px;
-    font-family: serif;
 }
 
 .googlePlay i{
     font-size: 48px;
-}
+} */
 
 footer .col h3{
     display: inline-block;
