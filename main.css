@@ -57,15 +57,36 @@ footer .col.icons{
     display: inline-block;
     background-color: black;
     border-radius: 8px;
-    padding: 10px;
+    padding: 8px 10px;
+    margin: 10px;
 }
 
 .googlePlay div{
     float: left;
+    height: 48px;
+    line-height: 48px;
+}
+
+.googlePlay .text{
+    padding-left: 8px;
+}
+
+.googlePlay .text{
+    font-size: 12px;
+}
+
+.googlePlay .text p{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.googlePlay .text p span{
+    font-size: 22px;
+    font-family: serif;
 }
 
 .googlePlay i{
-    font-size: 50px;
+    font-size: 48px;
 }
 
 footer .col h3{
