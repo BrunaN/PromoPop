@@ -7,7 +7,6 @@ header{
     padding: 0 300px;
     background-color: red;
     height: 80px;
-    width: 100vw;
     line-height: 80px;
     box-sizing: border-box;
 }
@@ -51,15 +50,44 @@ footer .col.icons{
     /* padding-left: 90px; */
 }
 
+.download{
+    height: 450px;
+    margin: 125px 0;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+
+.download div{
+    float: left; 
+}
+
+.download .download-text{
+    width: 450px;
+    margin-left: 260px;
+    padding: 100px 0;
+}
+
+.download .download-text h2{
+    font-family: Roboto;
+    font-size: 40px;
+}
+
+.download .img-phones img{
+    margin-top: -13%;
+    height: 600px;
+    float: right;
+}
+
 .googlePlay{
     display: inline-block;
     border-radius: 10px;
-    margin: 10px;
-    height: 60px;
+    margin: 20px 0;
+    height: 70px;
 }
 
 .googlePlay a img{
-    height: 60px;
+    height: 70px;
 }
 
 /* .googlePlay div{
