@@ -44,21 +44,22 @@ header ul li a:hover{
 }
 
 .download{
-    height: 450px;
+    height: 420px;
     margin: 125px 0;
+    padding: 0 250px;
     background-color: #f8f8f8;
     box-sizing: border-box;
 }
 
 
-.download div{
-    float: left; 
+.download .download-content{
+    width: 100%;
 }
 
 .download .download-text{
-    width: 450px;
-    margin-left: 260px;
-    padding: 100px 0;
+    width: 45%;
+    float: left;
+    padding: 90px 0;
 }
 
 .download .download-text h2{
@@ -78,8 +79,8 @@ header ul li a:hover{
 }
 
 .download .img-phones img{
-    margin-top: -13%;
-    height: 600px;
+    margin-top: -7.5%;
+    width: 55%;
     float: right;
 }
 
@@ -131,6 +132,7 @@ footer .brand-footer img{
 
 footer .content-footer{
     height: 195px;
+    width: 100%;
 }
 
 footer .col{
@@ -143,6 +145,7 @@ footer .col{
 
 footer .col.icons{
     width: 10%;
+    float: right;
     padding-right: 0px;
     /* padding-left: 90px; */
 }
