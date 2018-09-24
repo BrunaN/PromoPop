@@ -45,20 +45,20 @@ header ul li a:hover{
 
 .home{
     height: calc(100vh - 80px);
-    padding: 0 200px;
+    padding: 0 210px;
     background-color: #FF4747;
 }
 
 .home .text{
     float: left;
-    width: 56%;
+    width: 62%;
     padding-top: 15%;
 }
 
 .home .text h1{
     font-family: Roboto, sans-serif;
     color: #EFEFEF;
-    font-size: 52px;
+    font-size: 60px;
 }
 
 .home .text p{
@@ -70,13 +70,13 @@ header ul li a:hover{
 
 .home .animation{
     float: left;
-    width: 44%;
+    width: 38%;
     padding: 10% 0;
 }
 
 .home .animation .background{
     float: right;
-    height: 300px;
+    height: 310px;
     width: 300px;
     background-image: url(img/icone-1.png);
     background-repeat: no-repeat;
