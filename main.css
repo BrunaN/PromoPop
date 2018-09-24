@@ -5,10 +5,20 @@
 
 header{
     padding: 0 300px;
-    background-color: red;
+    background-color: #FF4747;
     height: 80px;
     line-height: 80px;
     box-sizing: border-box;
+}
+
+header .brand{
+    cursor: pointer;
+}
+
+header .brand img{
+    padding: 10px 0;
+    height: 60px;
+    float: left;
 }
 
 header ul{
@@ -22,32 +32,15 @@ header ul li{
 
 header ul li a{
     text-decoration: none;
-    color: wheat;
+    color: #FFF5E6;
     font-family: sans-serif;
     font-size: 17px;
     padding: 0 8px;
 }
 
 header ul li a:hover{
-    color: #ccc;
-}
-
-footer{
-    background-color: wheat;
-    padding: 50px 350px;
-    height: 350px;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-footer .col{
-    float: left;
-    padding-right: 100px;
-}
-
-footer .col.icons{
-    padding-right: 0px;
-    /* padding-left: 90px; */
+    color: #E5DCD3;
+    transition: 0.3s;
 }
 
 .download{
@@ -73,21 +66,21 @@ footer .col.icons{
     font-size: 40px;
 }
 
-.download .img-phones img{
-    margin-top: -13%;
-    height: 600px;
-    float: right;
-}
-
-.googlePlay{
+.download .download-text .googlePlay{
     display: inline-block;
     border-radius: 10px;
     margin: 20px 0;
     height: 70px;
 }
 
-.googlePlay a img{
+.download .download-text .googlePlay a img{
     height: 70px;
+}
+
+.download .img-phones img{
+    margin-top: -13%;
+    height: 600px;
+    float: right;
 }
 
 /* .googlePlay div{
@@ -117,6 +110,24 @@ footer .col.icons{
     font-size: 48px;
 } */
 
+footer{
+    background-color: #FFF5E6;
+    padding: 50px 350px;
+    height: 350px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+footer .col{
+    float: left;
+    padding-right: 100px;
+}
+
+footer .col.icons{
+    padding-right: 0px;
+    /* padding-left: 90px; */
+}
+
 footer .col h3{
     display: inline-block;
     padding-bottom: 12px;
@@ -132,6 +143,11 @@ footer .col ul li a{
     font-family: sans-serif;
     font-size: 16px;
     color: black;
+}
+
+footer .col ul li a:hover{
+    color: #FF4747;
+    transition: 0.3s;
 }
 
 footer .col ul li a i{
