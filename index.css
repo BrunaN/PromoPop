@@ -43,6 +43,59 @@ header ul li a:hover{
     transition: 0.3s;
 }
 
+.home{
+    height: calc(100vh - 80px);
+    padding: 0 200px;
+    background-color: #FF4747;
+}
+
+.home .text{
+    float: left;
+    width: 56%;
+    padding-top: 15%;
+}
+
+.home .text h1{
+    font-family: Roboto, sans-serif;
+    color: #EFEFEF;
+    font-size: 52px;
+}
+
+.home .text p{
+    font-family: sans-serif;
+    color: #E5DCD3;
+    margin-top: 20px;
+    font-size: 28px;
+}
+
+.home .animation{
+    float: left;
+    width: 44%;
+    padding: 10% 0;
+}
+
+.home .animation .background{
+    float: right;
+    height: 300px;
+    width: 300px;
+    background-image: url(img/icone-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: animation;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation{
+    0%{
+        background-image: url(img/icone-1.png);
+    }33%{
+        background-image: none;
+    }66%{
+        background-image: url(img/icone-1.png);
+    }
+}
+
 .download{
     height: 420px;
     margin: 125px 0;
