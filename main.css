@@ -33,7 +33,7 @@ header ul li{
 header ul li a{
     text-decoration: none;
     color: #FFF5E6;
-    font-family: sans-serif;
+    font-family: Roboto;
     font-size: 17px;
     padding: 0 8px;
 }
@@ -112,15 +112,26 @@ header ul li a:hover{
 
 footer{
     background-color: #FFF5E6;
-    padding: 50px 350px;
-    height: 350px;
+    padding: 25px 350px;
+    padding-top: 40px;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Roboto;
+    overflow: auto;
+    margin-top: 100px;
+}
+
+footer .brand-footer{
+    text-align: center;
+}
+
+footer .brand-footer img{
+    height: 150px;
 }
 
 footer .col{
     float: left;
     padding-right: 100px;
+    height: 195px;
 }
 
 footer .col.icons{
