@@ -55,13 +55,13 @@ header ul li a:hover{
     padding-top: 15%;
 }
 
-.home .text h1{
+.home .text h1, .store .text h1{
     font-family: Roboto, sans-serif;
     color: #EFEFEF;
     font-size: 60px;
 }
 
-.home .text p{
+.home .text p, .store .text p{
     font-family: sans-serif;
     color: #E5DCD3;
     margin-top: 20px;
@@ -76,24 +76,52 @@ header ul li a:hover{
 
 .home .animation .background{
     float: right;
-    height: 310px;
+    height: 300px;
     width: 300px;
-    background-image: url(img/icone-1.png);
+    background-image: url(img/icone-01.png);
     background-repeat: no-repeat;
     background-size: cover;
     animation-name: animation;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-iteration-count: infinite;
 }
 
 @keyframes animation{
     0%{
-        background-image: url(img/icone-1.png);
-    }33%{
-        background-image: none;
-    }66%{
-        background-image: url(img/icone-1.png);
+        background-image: url(img/icone-01.png);
+    }50%{
+        background-image: url(img/icone-02.png);
+    }100%{
+        background-image: url(img/icone-01.png);
     }
+}
+
+.store{
+    height: 100vh;
+    padding: 0 210px;
+}
+
+.store .text{
+    float: left;
+    width: 60%;
+}
+
+.store .text h1{
+    font-size: 50px;
+    color: black;
+}
+
+.store .text p{
+    color: #878787;
+}
+
+.store .img{
+    float: left;
+    width: 40%;
+}
+
+.store .img img{
+    height: 400px;
 }
 
 .download{
