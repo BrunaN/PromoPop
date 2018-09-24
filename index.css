@@ -138,13 +138,13 @@ footer .content-footer{
 footer .col{
     float: left;
     text-align: left;
-    width: 30%;
+    width: 31%;
     box-sizing: border-box;
     height: 195px;
 }
 
 footer .col.icons{
-    width: 10%;
+    width: 7%;
     float: right;
     padding-right: 0px;
     /* padding-left: 90px; */
