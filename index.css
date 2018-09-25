@@ -137,6 +137,20 @@ header ul li a:hover{
     color: #FF4747;
 }
 
+.store .img a i{
+    animation-name: animation-2;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-2{
+    from{
+        transform: translate(15px);
+    }to{
+        transform: translate(0);
+    }
+}
+
 .download{
     height: 420px;
     margin: 125px 0;
