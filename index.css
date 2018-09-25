@@ -58,6 +58,7 @@ header ul li a:hover{
     text-align: center;
     color: #FFF5E6;
     font-size: 60px; 
+    cursor: pointer;
     animation-name: down;
     animation-duration: 0.9s;
     animation-iteration-count: infinite;
