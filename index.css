@@ -142,7 +142,10 @@ header ul li a:hover{
 .store .img{
     float: left;
     padding: 70px 0;
+    padding-right: 30px;
+    box-sizing: border-box;
     width: 50%;
+    text-align: center
 }
 
 .store .img img{
@@ -154,7 +157,6 @@ header ul li a:hover{
     font-family: sans-serif;
     font-weight: bolder;
     text-decoration: none;
-    margin-left: 30px;
     color: #FF4747;
 }
 
