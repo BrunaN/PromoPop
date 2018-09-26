@@ -166,42 +166,17 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
     <script>
-        let ancora = document.querySelector('.fa-chevron-down');
-        Array.from(ancoras).forEach(function (a) {
-            a.addEventListener('click', scroll);
+        $(document).on('click', 'a[href^="#"]', function (event) {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 500);
         });
-
-        function animarScroll(atual, destino) {
-            if (atual >= destino) return;
-            document.body.scrollTop = atual;
-            setTimeout(function () {
-                animarScroll(atual += 50, destino);
-            }, 50);
-        }
-
-        function scroll(e) {
-            e.preventDefault();
-            var id = this.getAttribute('href');
-            var el = document.querySelector(id);
-            var posicao = el.getBoundingClientRect().top;
-            animarScroll(this.scrollTop, posicao);
-        }
-
-        let anchorlinks = document.querySelectorAll('a[href^="#"]')
-
-        for (let item of anchorlinks) { // relitere 
-            item.addEventListener('click', (e) => {
-                let hashval = item.getAttribute('href')
-                let target = document.querySelector(hashval)
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                })
-                history.pushState(null, null, hashval)
-                e.preventDefault()
-            })
-        }
     </script>
 </body>
 
