@@ -42,7 +42,9 @@
             </div>
         </div>
         <div class="down">
-            <i class="fas fa-chevron-down"></i>
+            <a href="#download">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </div>
 
@@ -51,7 +53,8 @@
             <img src="img/lojinha-01.png" alt="">
             <div class="img-text">
                 <a href="">
-                    Cadastre a sua Loja <i class="fas fa-arrow-right"></i>
+                    Cadastre a sua Loja
+                    <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
         </div>
@@ -63,7 +66,7 @@
         </div>
     </div>
 
-    <div class="download">
+    <div class="download" id="download">
         <div class="download-content">
             <div class="download-text">
                 <h2>Os melhores descontos próximos a você no seu bolso</h2>
@@ -162,6 +165,29 @@
             <img src="img/logo_vertical.png" alt="">
         </div>
     </footer>
+
+    <script>
+        let ancora = document.querySelector('.fa-chevron-down');
+        Array.from(ancoras).forEach(function (a) {
+            a.addEventListener('click', scroll);
+        });
+
+        function animarScroll(atual, destino) {
+            if (atual >= destino) return;
+            document.body.scrollTop = atual;
+            setTimeout(function () {
+                animarScroll(atual += 50, destino);
+            }, 50);
+        }
+
+        function scroll(e) {
+            e.preventDefault();
+            var id = this.getAttribute('href');
+            var el = document.querySelector(id);
+            var posicao = el.getBoundingClientRect().top;
+            animarScroll(this.scrollTop, posicao);
+        }
+    </script>
 </body>
 
 </html>
